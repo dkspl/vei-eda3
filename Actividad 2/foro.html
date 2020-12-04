@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIeL - Foro</title>
+    <link rel="stylesheet" href="/Actividad 2/css/w3.css">
+    <link rel="stylesheet" href="/Actividad 2/css/estilos.css">
+    <link rel="stylesheet" href="/Actividad 2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="w3-green">
+        <div class="w3-container w3-padding w3-white">
+            <img src="https://cdn.unlam.edu.ar/static/imagenes/logo_unlam_34.png" class="w3-margin-right" alt="logo unlam">
+            <img src="https://cdn.unlam.edu.ar/static/imagenes/logo_miel_34.png" alt="logo miel">
+        </div>
+        <div class="w3-bar w3-green">
+            <a href="#" onclick="w3_display('lateral')" class="w3-bar-item w3-button">&#9776;</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="material-icons">home</i></a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button"><b>Materia</b></button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green">
+                <a href="#" class="w3-bar-item w3-button">Materia 1</a>
+                <a href="#" class="w3-bar-item w3-button">Materia 2</a>
+                <a href="#" class="w3-bar-item w3-button">Materia 3</a>
+              </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button"><b>Foro</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green">
+                  <a href="#" class="w3-bar-item w3-button">Contenidos</a>
+                  <a href="#" class="w3-bar-item w3-button">Mensajes</a>
+                  <a href="#" class="w3-bar-item w3-button">Foro</a>
+                </div>
+              </div>
+            <div class="w3-right">
+                <a alt="Mi perfil" href="#" class="w3-bar-item w3-button"><i class="material-icons">person</i></a>
+                <a alt="Ayuda" href="#" class="w3-bar-item w3-button"><i class="material-icons">help</i></a>
+                <a alt="Cerrar sesión" href="#" class="w3-bar-item w3-button w3-red"><i class="material-icons">exit_to_app</i></a>
+            </div>
+        </div> 
+    </header>
+    <div class="w3-sidebar w3-bar-block w3-animate-left w3-light-grey" style="width:200px;display:none;" id="lateral">
+        <a href="#" class="w3-bar-item w3-button">Foro 1</a>
+        <a href="#" class="w3-bar-item w3-button">Foro 2</a>
+        <a href="#" class="w3-bar-item w3-button">Foro 3</a>
+    </div>
+    <div id="cuerpo">
+        <div class="w3-container w3-sand">
+            <h1>Nombre de foro</h1>
+            <p>Tema y descripción del foro, acá ponés lo que querés</p>
+        </div>
+    </div>
+</body>
+</html>
