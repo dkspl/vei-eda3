@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/iconoMiel.png"/>
-    <link rel="stylesheet" href="/Actividad1/css/bootstrap.css">
-    <link rel="stylesheet" href="/Actividad1/css/estilos.css">
-    <link rel="stylesheet" href="/Actividad1/css/w3.css">
+
+    <!--<link rel="icon" href="img/iconoMiel.png"/>-->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/w3.css">
+    
+    
     <title>MIeL - Materias Interactivas en Línea</title>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
 </head>
 <body>
     <header>
@@ -24,5 +33,10 @@
             </form>     
         </nav>
     </header>
+    
+    <main>
+        <article id="calendario"></article>
+    </main>
+    
 </body>
 </html>
