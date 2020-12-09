@@ -4,23 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIeL - Foro</title>
     <link rel="stylesheet" href="/Actividad2/css/w3.css">
-    <link rel="stylesheet" href="/Actividad2/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="/Actividad2/css/bootstrap.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/Actividad2/css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header class="w3-green">
-        <div class="w3-container w3-padding w3-white">
-            <img src="img/unlamNegroNombre.png" class="w3-margin-right" alt="logo unlam">
-            <img src="img/mielNegroNombre.png" alt="logo miel">
+    <div class="w3-green">
+        <div class="w3-bar w3-padding w3-green">
+            <img src="img/unlamBlancoNombre.png" class="w3-margin-right" alt="logo unlam">
+            <img src="img/mielBlancoNombre.png" alt="logo miel">
         </div>
         <div class="w3-bar w3-green">
             <a href="#" onclick="w3_display('lateral')" class="w3-bar-item w3-button">&#9776;</a>
             <a href="#" class="w3-bar-item w3-button"><i class="material-icons">home</i></a>
             <div class="w3-dropdown-hover">
               <button class="w3-button"><b>Materia</b></button>
-              <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green">
+              <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green" style="z-index: 999;">
                 <a href="#" class="w3-bar-item w3-button">Materia 1</a>
                 <a href="#" class="w3-bar-item w3-button">Materia 2</a>
                 <a href="#" class="w3-bar-item w3-button">Materia 3</a>
@@ -28,7 +29,7 @@
             </div>
             <div class="w3-dropdown-hover">
                 <button class="w3-button"><b>Foro</b></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green">
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green" style="z-index: 999;">
                   <a href="#" class="w3-bar-item w3-button">Contenidos</a>
                   <a href="#" class="w3-bar-item w3-button">Mensajes</a>
                   <a href="#" class="w3-bar-item w3-button">Foro</a>
@@ -39,18 +40,118 @@
                 <a alt="Ayuda" href="#" class="w3-bar-item w3-button"><i class="material-icons">help</i></a>
                 <a alt="Cerrar sesión" href="#" class="w3-bar-item w3-button w3-red"><i class="material-icons">exit_to_app</i></a>
             </div>
-        </div> 
-    </header>
-    <div class="w3-sidebar w3-bar-block w3-animate-left w3-light-grey" style="width:200px;display:none;" id="lateral">
-        <a href="#" class="w3-bar-item w3-button">Foro 1</a>
-        <a href="#" class="w3-bar-item w3-button">Foro 2</a>
-        <a href="#" class="w3-bar-item w3-button">Foro 3</a>
-    </div>
-    <div id="cuerpo">
-        <div class="w3-container w3-sand">
-            <h1>Nombre de foro</h1>
-            <p>Tema y descripción del foro, acá ponés lo que querés</p>
         </div>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-light-grey" style="width:200px;display:none;" id="lateral">
+            <a href="#" class="w3-bar-item w3-button">Foro 1</a>
+            <a href="#" class="w3-bar-item w3-button">Foro 2</a>
+            <a href="#" class="w3-bar-item w3-button">Foro 3</a>
+        </div> 
     </div>
+    
+    <div class="w3-main" style="margin-left:200px">
+        <div id="cuerpo">
+            <div class="w3-container">
+                <h1>Modificación de MIeL</h1>
+                <p>Estamos rediseñando el foro de MIeL para darle un lavado de cara, con funcionalidades nuevas y accesibilidad mejorada.</p>
+            </div>
+            <div class="w3-container">
+                <li class="w3-margin w3-padding w3-panel w3-leftbar w3-pale-green w3-border-green">
+                    <div class="w3-row">
+                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/alf.jpg" class="w3-circle fotoPerfil"></div>
+                        <div class="w3-rest">
+                            <div class="w3-bar-block"><span>SHUMWAY, Gordon</span><span class="w3-padding">31/12/20 13:00</span></div>
+                            <div class="w3-bar-block w3-padding-16">Esto es un mensaje del foro para comprobar que sea correcto. Estoy probando si la disposición del sitio es apropiada para mostrar al foro.</div>
+                            <div class="w3-button w3-block w3-padding-small w3-green w3-center verRespuestas">Ver respuestas <span class="w3-badge w3-margin-left w3-white w3-text-green">2</span></div>
+                            <div class="w3-hide">
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-pale-yellow">
+                                    <div class="w3-row">
+                                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                                        <div class="w3-rest w3-margin-top">
+                                            <div class="w3-bar-block"><span>PEREZ, Juan</span><span class="w3-padding">31/12/20 13:00</span></div>
+                                            <div class="w3-bar-block w3-padding-16">Esta es una respuesta para ver si queda bien la disposición. Escucho quejas, reclamos, lo que sea con tal de ver si hice macana.</div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-pale-yellow">
+                                    <div class="w3-row">
+                                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                                        <div class="w3-rest w3-margin-top">
+                                            <div class="w3-bar-block"><span>PEREZ, Juan</span><span class="w3-padding">31/12/20 13:00</span></div>
+                                            <div class="w3-bar-block w3-padding-16">Esta es una respuesta para ver si queda bien la disposición. Escucho quejas, reclamos, lo que sea con tal de ver si hice macana.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="w3-margin w3-padding w3-panel w3-leftbar w3-pale-green w3-border-green">
+                    <div class="w3-row">
+                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                        <div class="w3-rest">
+                            <div class="w3-bar-block"><span>Anónimo</span><span class="w3-padding">31/12/20 13:00</span></div>
+                            <div class="w3-bar-block w3-padding-16">Esto es un mensaje del foro para comprobar que sea correcto. Estoy probando si la disposición del sitio es apropiada para mostrar al foro.</div>
+                            <div class="w3-button w3-block w3-padding-small w3-green w3-center verRespuestas">Ver respuestas<span class="w3-badge w3-margin-left w3-white w3-text-green">2</span></div>
+                            <div class="w3-hide">
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-pale-yellow">
+                                    <div class="w3-row">
+                                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                                        <div class="w3-rest w3-margin-top">
+                                            <div class="w3-bar-block"><span>PEREZ, Juan</span><span class="w3-padding">31/12/20 13:00</span></div>
+                                            <div class="w3-bar-block w3-padding-16">Esta es una respuesta para ver si queda bien la disposición. Escucho quejas, reclamos, lo que sea con tal de ver si hice macana.</div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-pale-yellow">
+                                    <div class="w3-row">
+                                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                                        <div class="w3-rest w3-margin-top">
+                                            <div class="w3-bar-block"><span>PEREZ, Juan</span><span class="w3-padding">31/12/20 13:00</span></div>
+                                            <div class="w3-bar-block w3-padding-16">Esta es una respuesta para ver si queda bien la disposición. Escucho quejas, reclamos, lo que sea con tal de ver si hice macana.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="w3-margin w3-padding w3-panel w3-leftbar w3-pale-green w3-border-green">
+                    <div class="w3-row">
+                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/willie.jpg" class="w3-circle fotoPerfil"></div>
+                        <div class="w3-rest">
+                            <div class="w3-bar-block"><span>TANNER, Willie</span><span class="w3-padding">31/12/20 13:00</span></div>
+                            <div class="w3-bar-block w3-padding-16">Esto es un mensaje del foro para comprobar que sea correcto. Estoy probando si la disposición del sitio es apropiada para mostrar al foro.</div>
+                            <div class="w3-button w3-block w3-padding-small w3-green w3-center verRespuestas">Ver respuestas<span class="w3-badge w3-margin-left w3-white w3-text-green">2</span></div>
+                            <div class="w3-hide">
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-pale-yellow">
+                                    <div class="w3-row">
+                                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                                        <div class="w3-rest w3-margin-top">
+                                            <div class="w3-bar-block"><span>PEREZ, Juan</span><span class="w3-padding">31/12/20 13:00</span></div>
+                                            <div class="w3-bar-block w3-padding-16">Esta es una respuesta para ver si queda bien la disposición. Escucho quejas, reclamos, lo que sea con tal de ver si hice macana.</div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-pale-yellow">
+                                    <div class="w3-row">
+                                        <div class="w3-col s2 w3-hide-small w3-center w3-padding w3-margin-top"><img src="img/profilepic.jpg" class="w3-circle fotoPerfil"></div>
+                                        <div class="w3-rest w3-margin-top">
+                                            <div class="w3-bar-block"><span>PEREZ, Juan</span><span class="w3-padding">31/12/20 13:00</span></div>
+                                            <div class="w3-bar-block w3-padding-16">Esta es una respuesta para ver si queda bien la disposición. Escucho quejas, reclamos, lo que sea con tal de ver si hice macana.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+        </div>
+        <script>
+            $(".verRespuestas").click(function(e) {
+                $(this).next("div").toggleClass("w3-show");
+            });
+        </script>
 </body>
 </html>

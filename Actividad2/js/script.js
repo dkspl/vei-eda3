@@ -13,3 +13,4 @@ function w3_display(id) {
     else
         elemento.style.display = 'none';
 }
+

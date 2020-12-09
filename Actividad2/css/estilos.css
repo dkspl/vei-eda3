@@ -6,3 +6,11 @@ a:hover,
 .a:hover {
       text-decoration: none !important;
 }
+li{
+    list-style:none !important;
+}
+
+.fotoPerfil{
+    width: 70px;
+    height: 70px;
+}
