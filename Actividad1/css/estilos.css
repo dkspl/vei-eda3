@@ -53,3 +53,43 @@ body{
 
 }
 }
+
+@media (max-width: 500px) {
+	
+#video{
+	padding-left: 22px;
+	padding-top: 50px;
+}
+#vid{
+	width: 410px;
+	height: 273px;
+
+}
+}
+
+@media (max-width: 450px) {
+	
+#video{
+	padding-left: 22px;
+	padding-top: 50px;
+}
+#vid{
+	width: 400px;
+	height: 273px;
+
+}
+}
+
+
+@media (max-width: 400px) {
+	
+#video{
+	padding-left: 22px;
+	padding-top: 50px;
+}
+#vid{
+	width: 330px;
+	height: 200px;
+
+}
+}
