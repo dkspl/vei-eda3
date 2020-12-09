@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/iconoMiel.png"/>
+    <link rel="icon" href="img/iconoMiel.png" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/w3.css">
-    
-    
+
+
     <title>MIeL - Materias Interactivas en Línea</title>
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <script src='fullcalendar/core/main.js'></script>
     <script src='fullcalendar/daygrid/main.js'></script>
     <script src="js/calendario.js"></script>
+
 </head>
+
 <body>
     <header>
 
         <nav class="navbar navbar-success bg-success">
-            <div class="div-nav">
+            <div class="div-nav p-3">
                 <img src="img/unlamBlancoNombre.png" class="img-nav" alt="logo Unlam">
-                <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">   
+                <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">
             </div>
+
+            <div class="cont-header p-3">
                 <form class="form-inline form-header">
-                <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
-                <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">INGRESAR</button>
-            </form>     
+                    <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
+                    <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">INGRESAR</button>
+                </form>
+            </div>
         </nav>
+
     </header>
-    
-    <div id="cuerpo">
-    <main id="calendar">
-        <article id="calendario"></article>
+
+    <main>
+        <section class="row" id="cuerpo">
+            <!--<div class="col-12 col-md-6" id="calendar">
+                <article id="calendario"></article>
+            </div>-->
+            <div class="col-12 col-md-6 pt-3">
+                <div class="vacunas_calendario">
+                    <article id="calendario"></article>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-3 " id="video-div">
+                <div id="video" class="p-3">
+                    <iframe class="p-3" src="https://www.youtube.com/embed/ArTVr74nwXo" width="100%" height="315px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
     </main>
-    <div id="video">
-    <iframe id="vid" src="https://www.youtube.com/embed/ArTVr74nwXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
 </body>
+
 </html>
