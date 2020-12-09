@@ -716,6 +716,7 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
   color: #fff;
   background-color: #2C3E50;
   border-color: #2C3E50;
+  
 }
 
 .fc-button-primary:hover {
@@ -733,6 +734,7 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
   color: #fff;
   background-color: #2C3E50;
   border-color: #2C3E50;
+  margin-left: 20px;
 }
 
 .fc-button-primary:not(:disabled):active,
