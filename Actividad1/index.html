@@ -2,93 +2,107 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/iconoMiel.png" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/w3.css">
+  <link rel="icon" href="img/iconoMiel.png" />
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/w3.css">
 
 
-    <title>MIeL - Materias Interactivas en Línea</title>
-    <link href='fullcalendar/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-    <script src='fullcalendar/core/main.js'></script>
-    <script src='fullcalendar/daygrid/main.js'></script>
-    <script src="js/calendario.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>MIeL - Materias Interactivas en Línea</title>
+  <link href='fullcalendar/core/main.css' rel='stylesheet' />
+  <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+  <script src='fullcalendar/core/main.js'></script>
+  <script src='fullcalendar/daygrid/main.js'></script>
+  <script src="js/calendario.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+  <header>
+    <nav class="navbar navbar-success bg-success">
+      <div class="div-nav p-3">
+        <img src="img/unlamBlancoNombre.png" class="img-nav" alt="logo Unlam">
+        <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">
+      </div>
 
-        <nav class="navbar navbar-success bg-success">
-            <div class="div-nav p-3">
-                <img src="img/unlamBlancoNombre.png" class="img-nav" alt="logo Unlam">
-                <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">
-            </div>
+      <div class="cont-header p-3 w3-hide-small w3-hide-medium">
+        <form class="form-inline form-header">
+          <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
+          <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">INGRESAR</button>
+        </form>
+      </div>
+    </nav>
+  </header>
 
-            <div class="cont-header p-3">
-                <form class="form-inline form-header">
-                    <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
-                    <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">INGRESAR</button>
-                </form>
-            </div>
-        </nav>
-
-    </header>
-
-    <main>
-        <section class="row" id="cuerpo">
-            <div class="col-12 col-md-6 pt-3">
-                <div class="calendar">
-                    <article id="calendario"></article>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 p-3 " id="video-div">
-                <div id="video" class="p-3">
-                    <iframe class="p-3" src="https://www.youtube.com/embed/ArTVr74nwXo" width="100%" height="315px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators w3-hide">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner my-4">
-    <div class="carousel-item active">
-      <img src="img/unlamNegroNombre.png" alt="Los Angeles" width="900" height="300">
-    </div>
-    <div class="carousel-item">
-      <img src="img/unlamNegroNombre.png" alt="Chicago" width="900" height="300">
-    </div>
-    <div class="carousel-item">
-      <img src="img/unlamNegroNombre.png" alt="New York" width="900" height="300">
-    </div>
+  <div class="d-flex flex-wrap bd-highlight mb-3 w3-margin">
+    <div class="w3-half p-2 bd-highlight" id="calendario"></div>
+    <iframe class="w3-half align-self-center p-2 bd-highlight" src="https://www.youtube.com/embed/ArTVr74nwXo"
+      width="100%" height="315px" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
-  
-  <!-- Left and right controls -->
+
+
+  <div id="demo" class="carousel slide w3-margin" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators w3-hide">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="w3-container w3-padding">
+      <h1 class="w3-center">Sitios Recomendados</h1>
+      <hr class="w3-hide-large">
+    </div>
+    <div class="w3-center">
+      <div class="carousel-item active w3-margin-bottom">
+        <a href="http://ingenieria.unlam.edu.ar/"><img src="img/ico_ingenieria.jpg" alt="Ingenieria"
+            class="w3-margin-left w3-margin-right"></a>
+        <a href="http://humanidades.unlam.edu.ar"><img src="img/ico_humanidades.jpg"
+            alt="Departamento de Humanidades y Ciencias Sociales" class="w3-margin-left w3-margin-right"></a>
+        <a href="http://derecho.unlam.edu.ar/"><img src="img/ico_derecho.jpg"
+            alt="Departamento de Derecho y Ciencia Política" class="w3-margin-left w3-margin-right"></a>
+      </div>
+      <div class="carousel-item w3-margin-bottom">
+        <a href="http://economicas.unlam.edu.ar/"><img src="img/ico_economicas.jpg"
+            alt="Departamento de Ciencias Económicas" class="w3-margin-left w3-margin-right"></a>
+        <a href="http://salud.unlam.edu.ar/"><img src="img/ico_salud.jpg" alt="Departamento de Ciencias de la Salud"
+            class="w3-margin-left w3-margin-right"></a>
+        <a href="http://posgrado.unlam.edu.ar"><img src="img/ico_posgrado.jpg" alt="Escuela de Posgrado"
+            class="w3-margin-left w3-margin-right"></a>
+      </div>
+      <div class="carousel-item w3-margin-bottom">
+        <a href="http://formacioncontinua.unlam.edu.ar/"><img src="img/ico_formacion.jpg"
+            alt="Escuela de Formación Continua" class="w3-margin-left w3-margin-right"></a>
+        <a href="http://cyt.unlam.edu.ar/"><img src="img/ico_cyt.jpg" alt="Secretaría de Ciencia y Tecnología"
+            class="w3-margin-left w3-margin-right"></a>
+        <a href="http://biblioteca.unlam.edu.ar/"><img src="img/ico_biblioteca.jpg" alt="Biblioteca Leopoldo Marechal"
+            class="w3-margin-left w3-margin-right"></a>
+      </div>
+    </div>
+    <!-- Left and right controls 
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </a>
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+  </a>-->
+  </div>
 </body>
 
 </html>
