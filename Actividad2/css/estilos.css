@@ -4,7 +4,7 @@ body{
     font-size: 13px;
 }
 
-a:hover, 
+a, a:hover, 
 .a:hover {
       text-decoration: none !important;
 }
@@ -15,4 +15,7 @@ li{
 .fotoPerfil{
     width: 70px;
     height: 70px;
+}
+.opciones{
+    color:darkslategrey;
 }
