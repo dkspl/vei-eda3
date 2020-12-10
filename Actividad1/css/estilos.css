@@ -124,14 +124,16 @@ body {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
+    
     #video{
-	margin-top: 15px;
-}
-.carousel-inner img {
-    width: 50%;
-    height: 50%;
-    margin-left: 65px;
-  }
+	    margin-top: 15px;
+    }
+
+    .carousel-inner img {
+        width: 50%;
+        height: 50%;
+        margin-left: 65px;
+    }
 
 }
 
