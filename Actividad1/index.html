@@ -42,35 +42,38 @@
                 <form class="form-inline form-header">
                     <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
                     <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
-                    <a href="../Actividad2/foro.html" class="btn btn-outline-light my-2 my-sm-0">  INGRESAR</a>
+                    <a href="../Actividad2/foro.html" class="btn btn-outline-light my-2 my-sm-0"> INGRESAR</a>
                 </form>
             </div>
 
-            <button id="botonModal" type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-  			INGRESAR
-			</button>
+            <button id="botonModal" type="button" class="btn btn-success" data-toggle="modal"
+                data-target="#exampleModal">
+                INGRESAR
+            </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
-        <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
-        <a href="../Actividad2/foro.html"><button type="button" class="btn btn-primary">Ingresar</button></a>
-      </div>
-    </div>
-  </div>
-</div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
+                            <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                            <a href="../Actividad2/foro.html"><button type="button"
+                                    class="btn btn-primary">Ingresar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -131,7 +134,7 @@
     <span class="carousel-control-next-icon"></span>
   </a>-->
     </div>
- 
+
     <div class="w3-container w3-margin-top">
         <hr>
         <h1 class="w3-center">Noticias</h1>
@@ -176,6 +179,178 @@
             </div>
         </section>
     </div>
+    <footer class="page-footer font-weight-bold bg-success" style="padding:2em; margin-top: 2em;">
+        <div class="w3-row">
+            <div class="w3-col s6 w3-center">
+                <div class="footer-links">
+                    <a data-toggle="modal" href="#myModal" id="amiel">¿Qué es MIeL?</a>
+                    <a data-toggle="modal" href="#myModalQuienes" id="amiel">Quiénes Somos</a>
+                    <a data-toggle="modal" href="#myModalContacto" id="amiel">Contacto</a>
+                </div>
+            </div>
+            <div class="w3-col s6 w3-center">
+                <div class="footer-links">
+                    <a href="https://miel.unlam.edu.ar/data2/ayuda/primeros_pasos.pdf" id="amiel">Primeros Pasos en
+                        MIeL</a>
+                    <a href="http://miel.unlam.edu.ar/tutorias" id="amiel">Sistema de Tutorías</a>
+                    <a href="https://biblioteca.unlam.edu.ar/" id="amiel">Catálogo Bibliográfico</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="texto-footer">Departamento de Ingeniería e Investigaciones Tecnológicas - Materias Interactivas en Línea - 2020</h4>
+    </footer>
+
+    <!--MODAL MIEL-->
+    <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="bg-success w3-text-white" style="padding:35px 50px;">
+                        <h4 class="text-center">¿Qué es MIeL?</h4>
+                    </div>
+                    <div class="modal-body bg-dark" style="padding:40px 50px;">
+                        <div class="textosmodal">
+                            <p>MIeL (Materias Interactivas en Línea) es una plataforma de gestión de EaD desarrollada y
+                                administrada por docentes del Departamento de Ingeniería e Investigaciones Tecnológicas.
+                            </p>
+                            <p>La misma nació como objetivo de un proyecto de investigación y fue puesta en
+                                funcionamiento
+                                en el transcurso del ciclo lectivo 2001.</p>
+                            <p>A través de ella se gestionan materias de grado, posgrado, cursos abiertos a la comunidad
+                                y
+                                de perfeccionamiento docente. En los mismos, la plataforma permite la administración de
+                                los
+                                contenidos, la interacción entre alumnos y docentes así como la toma de evaluaciones,
+                                entrega y corrección de trabajos prácticos.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-success">
+                        <button type="submit" class="btn btn-light btn-default pull-left" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-remove"></span>Salir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL QUIENES SOMOS-->
+    <div class="container">
+        <div class="modal fade" id="myModalQuienes" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="bg-success w3-text-white" style="padding:35px 50px;">
+                        <h4 class="text-center">¿Quiénes Somos?</h4>
+                    </div>
+                    <div class="modal-body bg-dark" style="padding:40px 50px;">
+                        <div class="textosmodal">
+                            <p><strong>Coordinación:</strong></p>
+                            <div class="w3-margin-bottom">
+                                <div>Fernando Orthusteguy</div>
+                                <div class="w3-small"><a href="mailto:forthus@unlam.edu.ar"
+                                        class="text-success">forthus@unlam.edu.ar</a>
+                                </div>
+                            </div>
+
+                            <p><strong>Gestión de contenido y usuarios:</strong></p>
+                            <div class="w3-margin-bottom">
+                                <div>Pedro Gómez</div>
+                                <div class="w3-small"><a href="mailto:pgomez@unlam.edu.ar"
+                                        class="text-success">pgomez@unlam.edu.ar</a></div>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <div>Enrique Merelli</div>
+                                <div class="w3-small"><a href="mailto:emerelli@unlam.edu.ar"
+                                        class="text-success">emerelli@unlam.edu.ar</a>
+                                </div>
+                            </div>
+
+                            <p><strong>Desarrollo y mantenimiento:</strong></p>
+                            <div class="w3-margin-bottom">
+                                <div>Alejandro Rusticcini</div>
+                                <div class="w3-small"><a href="mailto:arusticcini@unlam.edu.ar"
+                                        class="text-success">arusticcini@unlam.edu.ar</a>
+                                </div>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <div>Leandro Morrone</div>
+                                <div class="w3-small"><a href="mailto:lmorrone@unlam.edu.ar"
+                                        class="text-success">lmorrone@unlam.edu.ar</a>
+                                </div>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <div>Facundo D'Aranno</div>
+                                <div class="w3-small"><a href="mailto:fdaranno@unlam.edu.ar"
+                                        class="text-success">fdaranno@unlam.edu.ar</a>
+                                </div>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <div>Juan De Cicco</div>
+                                <div class="w3-small"><a href="mailto:jdecicco@unlam.edu.ar"
+                                        class="text-success">jdecicco@unlam.edu.ar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-success">
+                        <button type="submit" class="btn btn-light btn-default pull-left" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-remove"></span>Salir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL CONTACTO-->
+    <div class="container">
+        <div class="modal fade" id="myModalContacto" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="bg-success w3-text-white" style="padding:35px 50px;">
+                        <h4 class="text-center">Contacto</h4>
+                    </div>
+                    <div class="modal-body bg-dark" style="padding:40px 50px;">
+                        <div class="textosmodal">
+                            <p>E-mail de contacto:<br><a href="mailto:miel@unlam.edu.ar"
+                                    class="text-success">miel@unlam.edu.ar</a></p>
+                            <p>
+                                <strong>Por extravío de contraseñas:</strong><br>
+                                - Si es docente: Envíenos un correo electrónico o diríjase al 241.<br>
+                                - Si es alumno: Debe recuperarla a través de <a href="http://alumno2.unlam.edu.ar/"
+                                    target="_blank" class="text-success">Intraconsulta</a>
+                            </p>
+                            <p>Para alta de materias o tutores, o problemas técnicos acercarse al laboratorio 241
+                                (Unidad de
+                                Educación a Distancia).</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-success">
+                        <button type="submit" class="btn btn-light btn-default pull-left" data-dismiss="modal"><span
+                                class="glyphicon glyphicon-remove"></span>Salir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#myBtnQuienes").click(function () {
+                $("#myModalQuienes").modal();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#myBtnQuienes").click(function () {
+                $("#myModalContacto").modal();
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -20,6 +20,31 @@ a, a:hover, .a:hover {
     height: 10em;
 }
 
+#amiel{
+    color: white;
+    margin-bottom: 1em;
+}
+
+#amiel:hover{
+color: rgb(252, 252, 133);
+}
+
+.textosmodal{
+    color: white;
+    font-size: medium;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-footer{
+    font-size: small;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
 @media (max-width:425px){
 	#botonModal{
 	margin-left: 90px;
