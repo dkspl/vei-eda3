@@ -37,7 +37,7 @@
                 <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">
             </div>
 
-            <div class="cont-header p-3">
+            <div class="cont-header p-3 w3-hide-small w3-hide-medium">
                 <form class="form-inline form-header">
                     <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
                     <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
@@ -47,109 +47,99 @@
         </nav>
     </header>
 
-    <main>
-        <section class="row" id="cuerpo">
-            <div class="col-12 col-md-6 pt-3">
-                <div class="calendar">
-                    <article id="calendario"></article>
+    <div class="d-flex flex-wrap bd-highlight mb-3 w3-margin">
+        <div class="w3-half p-2 bd-highlight" id="calendario"></div>
+        <iframe class="w3-half align-self-center p-2 bd-highlight" src="https://www.youtube.com/embed/ArTVr74nwXo"
+            width="100%" height="315px" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
+    <div id="demo" class="carousel slide w3-margin" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators w3-hide">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="w3-container w3-padding">
+            <h1 class="w3-center">Sitios Recomendados</h1>
+            <hr class="w3-hide-large">
+        </div>
+        <div class="w3-center">
+            <div class="carousel-item active w3-margin-bottom">
+                <a href="http://ingenieria.unlam.edu.ar/"><img src="img/ico_ingenieria.jpg" alt="Ingenieria"
+                        class="w3-margin-left w3-margin-right"></a>
+                <a href="http://humanidades.unlam.edu.ar"><img src="img/ico_humanidades.jpg"
+                        alt="Departamento de Humanidades y Ciencias Sociales"
+                        class="w3-margin-left w3-margin-right"></a>
+                <a href="http://derecho.unlam.edu.ar/"><img src="img/ico_derecho.jpg"
+                        alt="Departamento de Derecho y Ciencia Política" class="w3-margin-left w3-margin-right"></a>
+            </div>
+            <div class="carousel-item w3-margin-bottom">
+                <a href="http://economicas.unlam.edu.ar/"><img src="img/ico_economicas.jpg"
+                        alt="Departamento de Ciencias Económicas" class="w3-margin-left w3-margin-right"></a>
+                <a href="http://salud.unlam.edu.ar/"><img src="img/ico_salud.jpg"
+                        alt="Departamento de Ciencias de la Salud" class="w3-margin-left w3-margin-right"></a>
+                <a href="http://posgrado.unlam.edu.ar"><img src="img/ico_posgrado.jpg" alt="Escuela de Posgrado"
+                        class="w3-margin-left w3-margin-right"></a>
+            </div>
+            <div class="carousel-item w3-margin-bottom">
+                <a href="http://formacioncontinua.unlam.edu.ar/"><img src="img/ico_formacion.jpg"
+                        alt="Escuela de Formación Continua" class="w3-margin-left w3-margin-right"></a>
+                <a href="http://cyt.unlam.edu.ar/"><img src="img/ico_cyt.jpg" alt="Secretaría de Ciencia y Tecnología"
+                        class="w3-margin-left w3-margin-right"></a>
+                <a href="http://www.el1webtv.com.ar"><img src="img/ico_el1webtv.jpg" alt="El1 WebTV"
+                        class="w3-margin-left w3-margin-right"></a>
+            </div>
+        </div>
+        <!-- Left and right controls 
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>-->
+    </div>
+    <section class="w3-container w3-margin w3-center">
+        <div class="w3-third">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/polotecnologico.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Polo Tecnológico</h5>
+                    <p class="card-text">El Centro de Desarrollo en Tecnologías de la Información y las
+                        Comunicaciones sigue creciendo..</p>
+                    <a href="http://www.el1digital.com.ar/articulo/view/87548/el-polo-tecnologico-de-la-unlam-sigue-creciendo-a-dos-anos-de-su-inauguracion#:~:text=El%20acto%20realizado%20el%2013,Comunicaciones%2C%20seg%C3%BAn%20su%20denominaci%C3%B3n%20formal."
+                        class="btn btn-success">Ver más</a>
                 </div>
             </div>
-            <div class="col-12 col-md-6 p-3 " id="video-div">
-                <div id="video" class="p-3">
-                    <iframe class="p-3" src="https://www.youtube.com/embed/ArTVr74nwXo" width="100%" height="315px"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+        </div>
+        <div class="w3-third">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/pileta.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Piscina</h5>
+                    <p class="card-text">La piscina de la Universidad es semiolímpica, tiene 25mts de..</p>
+                    <a href="https://bafilm.gba.gob.ar/locaciones/piscina-olimpica-unlam/" class="btn btn-success">Ver
+                        más</a>
                 </div>
             </div>
-        </section>
-
-        <section class="mb-5">
-            <div class="w3-container w3-padding">
-                <h1 class="w3-center">Sitios Recomendados</h1>
-                <hr class="w3-hide-large">
-            </div>
-
-            <div id="demo" class="carousel slide" data-ride="carousel">
-
-                <!-- Indicators -->
-                <ul class="carousel-indicators w3-hide">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-
-                <div class="w3-center w3-margin">
-                    <div class="carousel-item active w3-margin-bottom">
-                        <a href="http://ingenieria.unlam.edu.ar/"><img src="img/ico_ingenieria.jpg" alt="Ingenieria"
-                                class="w3-margin-left w3-margin-right"></a>
-                        <a href="http://humanidades.unlam.edu.ar"><img src="img/ico_humanidades.jpg"
-                                alt="Departamento de Humanidades y Ciencias Sociales"
-                                class="w3-margin-left w3-margin-right"></a>
-                        <a href="http://derecho.unlam.edu.ar/"><img src="img/ico_derecho.jpg"
-                                alt="Departamento de Derecho y Ciencia Política"
-                                class="w3-margin-left w3-margin-right"></a>
-                    </div>
-                    <div class="carousel-item w3-margin-bottom">
-                        <a href="http://economicas.unlam.edu.ar/"><img src="img/ico_economicas.jpg"
-                                alt="Departamento de Ciencias Económicas" class="w3-margin-left w3-margin-right"></a>
-                        <a href="http://salud.unlam.edu.ar/"><img src="img/ico_salud.jpg"
-                                alt="Departamento de Ciencias de la Salud" class="w3-margin-left w3-margin-right"></a>
-                        <a href="http://posgrado.unlam.edu.ar"><img src="img/ico_posgrado.jpg" alt="Escuela de Posgrado"
-                                class="w3-margin-left w3-margin-right"></a>
-                    </div>
-                    <div class="carousel-item w3-margin-bottom">
-                        <a href="http://formacioncontinua.unlam.edu.ar/"><img src="img/ico_formacion.jpg"
-                                alt="Escuela de Formación Continua" class="w3-margin-left w3-margin-right"></a>
-                        <a href="http://cyt.unlam.edu.ar/"><img src="img/ico_cyt.jpg"
-                                alt="Secretaría de Ciencia y Tecnología" class="w3-margin-left w3-margin-right"></a>
-                        <a href="http://www.el1webtv.com.ar"><img src="img/ico_el1webtv.jpg" alt="El1 WebTV"
-                                class="w3-margin-left w3-margin-right"></a>
-                    </div>
+        </div>
+        <div class="w3-third">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/biblioteca.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Biblioteca</h5>
+                    <p class="card-text">La biblioteca Leopoldo Marechal está ofreciendo un servicio de acceso a
+                        libros digitales..</p>
+                    <a href="https://biblioteca.unlam.edu.ar/" class="btn btn-success">Ver más</a>
                 </div>
             </div>
-
-        </section>
-
-        <section class="w3-container w3-margin w3-center">
-            <div class="w3-third">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/polotecnologico.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Polo Tecnológico</h5>
-                        <p class="card-text">El Centro de Desarrollo en Tecnologías de la Información y las
-                            Comunicaciones sigue creciendo..</p>
-                        <a href="http://www.el1digital.com.ar/articulo/view/87548/el-polo-tecnologico-de-la-unlam-sigue-creciendo-a-dos-anos-de-su-inauguracion#:~:text=El%20acto%20realizado%20el%2013,Comunicaciones%2C%20seg%C3%BAn%20su%20denominaci%C3%B3n%20formal."
-                            class="btn btn-success">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/pileta.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Piscina</h5>
-                        <p class="card-text">La piscina de la Universidad es semiolímpica, tiene 25mts de..</p>
-                        <a href="https://bafilm.gba.gob.ar/locaciones/piscina-olimpica-unlam/"
-                            class="btn btn-success">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/biblioteca.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Biblioteca</h5>
-                        <p class="card-text">La biblioteca Leopoldo Marechal está ofreciendo un servicio de acceso a
-                            libros digitales..</p>
-                        <a href="https://biblioteca.unlam.edu.ar/" class="btn btn-success">Ver más</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
+        </div>
+    </section>
 </body>
 
 </html>

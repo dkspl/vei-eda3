@@ -4,10 +4,10 @@ body{
     font-size: 13px;
 }
 
-a, a:hover, 
-.a:hover {
+a, a:hover, .a:hover {
       text-decoration: none !important;
 }
+
 li{
     list-style:none !important;
 }
@@ -16,6 +16,11 @@ li{
     width: 70px;
     height: 70px;
 }
+
 .opciones{
     color:darkslategrey;
+}
+
+textarea{
+    border:none !important;
 }
