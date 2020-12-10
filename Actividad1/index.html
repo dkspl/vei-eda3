@@ -1,46 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--<link rel="icon" href="img/iconoMiel.png"/>-->
-
+    <link rel="icon" href="img/iconoMiel.png" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/w3.css">
-    
-    
+
+
     <title>MIeL - Materias Interactivas en Línea</title>
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <script src='fullcalendar/core/main.js'></script>
     <script src='fullcalendar/daygrid/main.js'></script>
     <script src="js/calendario.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <header>
 
         <nav class="navbar navbar-success bg-success">
-            <div class="div-nav">
+            <div class="div-nav p-3">
                 <img src="img/unlamBlancoNombre.png" class="img-nav" alt="logo Unlam">
-                <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">   
+                <img src="img/mielBlancoNombre.png" class="img-nav" alt="logo MIeL">
             </div>
+
+            <div class="cont-header p-3">
                 <form class="form-inline form-header">
-                <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
-                <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">INGRESAR</button>
-            </form>     
+                    <input class="form-control mr-sm-2 input-header" type="text" placeholder="Usuario">
+                    <input class="form-control mr-sm-2 input-header" type="password" placeholder="Constraseña">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">INGRESAR</button>
+                </form>
+            </div>
         </nav>
+
     </header>
-    
-    <div id="cuerpo">
-    <main id="calendar">
-        <article id="calendario"></article>
+
+    <main>
+        <section class="row" id="cuerpo">
+            <div class="col-12 col-md-6 pt-3">
+                <div class="calendar">
+                    <article id="calendario"></article>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-3 " id="video-div">
+                <div id="video" class="p-3">
+                    <iframe class="p-3" src="https://www.youtube.com/embed/ArTVr74nwXo" width="100%" height="315px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
     </main>
-    <div id="video">
-    <iframe id="vid" src="https://www.youtube.com/embed/ArTVr74nwXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/unlamNegroNombre.png" alt="Los Angeles" width="900" height="300">
     </div>
+    <div class="carousel-item">
+      <img src="img/unlamNegroNombre.png" alt="Chicago" width="900" height="300">
     </div>
+    <div class="carousel-item">
+      <img src="img/unlamNegroNombre.png" alt="New York" width="900" height="300">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 </body>
+
 </html>
