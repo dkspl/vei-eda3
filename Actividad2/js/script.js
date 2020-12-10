@@ -1,3 +1,21 @@
+$(document).ready(function () {
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          $('#arriba').fadeIn();
+      } else {
+          $('#arriba').fadeOut();
+      }
+  });
+  $('#arriba').click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 300);
+      return false;
+  });
+
+  $("#nuevoMensaje").click(function (e) {
+    abrirOpciones("mensaje")
+  });
+});
+
 function abrirOpciones(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) { 
