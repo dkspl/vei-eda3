@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 title: 'Fin de cuatrimestre',
                 start: '2020-12-19',
                 end:'2020-12-20'
+            },
+
+            {
+                title: 'Inscripcion a finales',
+                start: '2020-12-14',
+                end:'2020-12-16'
+            },
+
+            {
+                title: 'Verificacion de inscripcion a finales',
+                start: '2020-12-21',
+                end:'2020-12-23'
             }
             
         ]
