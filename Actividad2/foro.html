@@ -8,13 +8,14 @@
     <link rel="icon" href="img/iconoMiel.png" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
-    <div class="w3-bottom" id="arriba">
+    <div class="w3-bottom" style="width:30px; right:0;">
         <div class="w3-right w3-margin">
             <a class="material-icons w3-button w3-padding-small w3-grey w3-text-white w3-opacity"
                 id="arriba">arrow_upward</a>
@@ -65,9 +66,27 @@
     <div class="w3-main" style="margin-left:200px;margin-top: 90px;">
         <div id="cuerpo">
             <div class="w3-container">
-                <h1>Modificación de MIeL</h1>
+                <h1>Modificación del foro</h1>
                 <p>Estamos rediseñando el foro de MIeL para darle un lavado de cara, con funcionalidades nuevas y
                     accesibilidad mejorada.</p>
+            </div>
+            <div class="w3-row w3-margin w3-padding w3-panel ">
+                <div class="w3-green w3-twothird w3-white">
+                    <div class="w3-bar-block">
+                        <div class="w3-threequarter">
+                            <input type="text" class="w3-bar-item w3-input w3-border w3-white" placeholder="Ingrese su búsqueda">
+                        </div>
+                        <div class="w3-col" style="width:75px">
+                            <button class="w3-grey w3-bar-item w3-border w3-hover-opacity w3-border-grey w3-text-white"><span>Buscar</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="w3-bar-block w3-third">
+                    <div class="w3-bar-item">
+                        <span class="w3-right">Último mensaje: 31/12/2020 13:00:02</span>
+                    </div>
+
+                </div>
             </div>
             <div class="w3-container w3-margin w3-padding">
                 <div class="w3-button w3-block w3-hover-shadow w3-green w3-center" id="nuevoMensaje">
@@ -115,18 +134,18 @@
                         <div class="w3-rest">
                             <div class="w3-bar-block">
                                 <span><b>SHUMWAY, Gordon</b></span>
-                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
+                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
                                 <div class="w3-right">
                                     <span class="material-icons opciones">create</span>
                                     <span class="material-icons opciones">delete_outline</span>
                                 </div>
                             </div>
-                            <div class="w3-bar-block w3-padding-16">Esto es un mensaje del foro para comprobar que sea
-                                correcto. Estoy probando si la disposición del sitio es apropiada para mostrar al foro.
+                            <div class="w3-bar-block w3-padding-16">Buenos días, mi nombre es Gordon Shumway y provengo del planeta Melmac. Accidentalmente, mi nave chocó contra su hogar, espero no haberles causado muchas molestias.
+                                Llevo varios días a la deriva debido a que mi planeta estalló porque todos los habitantes conectamos el secador de pelo al mismo tiempo, grave error.
                             </div>
                             <div class="w3-row w3-margin-bottom w3-right">
                                 <button
-                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
+                                    class="w3-button w3-margin-right w3-green w3-padding-small">Responder</button>
                                 <button class="w3-button w3-green w3-padding-small">
                                     Me gusta
                                     <span class="w3-badge w3-white w3-text-green">2</span>
@@ -137,19 +156,19 @@
                                 <span class="w3-badge w3-margin-left w3-white w3-text-green">2</span>
                             </div>
 
-                            <div class="w3-hide">
+                            <div class="w3-hide respuestas">
                                 <div class="w3-container w3-leftbar w3-border-green w3-margin-top">
                                     <div class="w3-row">
-                                        <img src="img/profilepic.jpg"
+                                        <img src="img/lynn.jpg"
                                             class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
-                                        <div class="w3-rest w3-margin-top">
+                                        <div class="w3-rest w3-margin-top user">
                                             <div class="w3-bar-block">
-                                                <span><b>PEREZ, Juan</b></span>
-                                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
+                                                <span><b>TANNER, Lynn</b></span>
+                                                <span class="w3-padding-small w3-round w3-pale-green cod">1234</span>
+                                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
                                             </div>
                                             <div class="w3-bar-block w3-padding-16">
-                                                Esta es una respuesta para ver si queda bien la disposición. Escucho
-                                                quejas, reclamos, lo que sea con tal de ver si hice macana.
+                                                Awww, un peluche que habla.
                                             </div>
                                             <div class="w3-row w3-margin-bottom w3-right">
                                                 <button
@@ -162,18 +181,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top">
+                                <div class="w3-container w3-leftbar w3-border-blue w3-margin-top">
                                     <div class="w3-row">
-                                        <img src="img/profilepic.jpg"
+                                        <img src="img/willie.jpg"
                                             class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
-                                        <div class="w3-rest w3-margin-top">
+                                        <div class="w3-rest w3-margin-top user">
                                             <div class="w3-bar-block">
-                                                <span><b>PEREZ, Juan</b></span>
-                                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
+                                                <span><b>TANNER, William</b></span>
+                                                <span class="w3-padding-small w3-round w3-pale-green cod">1234</span>
+                                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
                                             </div>
                                             <div class="w3-bar-block w3-padding-16">
-                                                Esta es una respuesta para ver si queda bien la disposición. Escucho
-                                                quejas, reclamos, lo que sea con tal de ver si hice macana.
+                                                Bienvenido a la Tierra.
                                             </div>
                                             <div class="w3-row w3-margin-bottom w3-right">
                                                 <button
@@ -186,7 +205,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-sand">
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-sand respuesta">
                                     <div class="w3-row w3-section">
                                         <img src="img/alf.jpg"
                                             class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin-right">
@@ -227,45 +246,46 @@
                         <div class="w3-rest">
                             <div class="w3-bar-block">
                                 <span><b>Anónimo</b></span>
-                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
+                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
                                 <div class="w3-right">
                                     <span class="material-icons opciones">create</span>
                                     <span class="material-icons opciones">delete_outline</span>
                                 </div>
                             </div>
-                            <div class="w3-bar-block w3-padding-16">
-                                Esto es un mensaje del foro para comprobar que sea correcto. Estoy probando si la
-                                disposición del sitio es apropiada para mostrar al foro.
+                            <div class="w3-bar-block w3-padding-16">Quiero comer a Suertudo.
                             </div>
                             <div class="w3-row w3-margin-bottom w3-right">
                                 <button
-                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
+                                    class="w3-button w3-margin-right w3-green w3-padding-small">Responder</button>
                                 <button class="w3-button w3-green w3-padding-small">
                                     Me gusta
-                                    <span class="w3-badge w3-white w3-text-green">2</span>
                                 </button>
                             </div>
                             <div class="w3-button w3-block w3-padding-small w3-green w3-center verRespuestas">
                                 Ver respuestas
                                 <span class="w3-badge w3-margin-left w3-white w3-text-green">2</span>
                             </div>
-                            <div class="w3-hide">
+
+                            <div class="w3-hide respuestas">
                                 <div class="w3-container w3-leftbar w3-border-blue w3-margin-top">
                                     <div class="w3-row">
-                                        <img src="img/willie.jpg"
+                                        <img src="img/kate.jpg"
                                             class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
-                                        <div class="w3-rest w3-margin-top">
-                                            <div class="w3-bar-block"><span><b>TANNER, Willie</b></span><span
-                                                    class="w3-padding w3-opacity">31/12/20 13:00</span></div>
+                                        <div class="w3-rest w3-margin-top user">
+                                            <div class="w3-bar-block">
+                                                <span><b>TANNER, Kate</b></span>
+                                                <span class="w3-padding-small w3-round w3-pale-green cod">1234</span>
+                                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
+                                            </div>
                                             <div class="w3-bar-block w3-padding-16">
-                                                Estás en lo correcto. Mañana llevo los informes.
+                                                AAAAAAAAAAALFFFFFFF
                                             </div>
                                             <div class="w3-row w3-margin-bottom w3-right">
                                                 <button
                                                     class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
-                                                <button class="w3-button w3-green w3-padding-small">
-                                                    Me gusta
-                                                    <span class="w3-badge w3-white w3-text-green">2</span>
+                                                <button class="w3-button w3-red w3-padding-small">
+                                                    Ya no me gusta
+                                                    <span class="w3-badge w3-white w3-text-red">5</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -275,137 +295,31 @@
                                     <div class="w3-row">
                                         <img src="img/profilepic.jpg"
                                             class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
-                                        <div class="w3-rest w3-margin-top">
-                                            <div class="w3-bar-block"><span><b>PEREZ, Juan</b></span><span
-                                                    class="w3-padding w3-opacity">31/12/20 13:00</span></div>
-                                            <div class="w3-bar-block w3-padding-16">
-                                                Esta es una respuesta para ver si queda bien la disposición. Escucho
-                                                quejas, reclamos, lo que sea con tal de ver si hice macana.
-                                            </div>
-                                            <div class="w3-row w3-margin-bottom w3-right">
-                                                <button
-                                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
-                                                <button class="w3-button w3-green w3-padding-small">
-                                                    Me gusta
-                                                    <span class="w3-badge w3-white w3-text-green">2</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-sand">
-                                    <div class="w3-row w3-section">
-                                        <img src="img/alf.jpg"
-                                            class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin-right">
-                                        <div class="w3-rest">
+                                        <div class="w3-rest w3-margin-top user">
                                             <div class="w3-bar-block">
-                                                <textarea class="w3-input w3-border-0 w3-white" rows="3"></textarea>
-                                            </div>
-                                            <div class="w3-padding-4">
-                                                <label>
-                                                    <input type="checkbox" class="w3-check w3-small" name="anonimo">
-                                                    Publicar como anónimo
-                                                </label>
-                                            </div>
-                                            <div class="w3-section">
-                                                <button class="w3-button w3-padding-small w3-green">
-                                                    <span class="material-icons">
-                                                        insert_photo
-                                                    </span>
-                                                </button>
-                                                <button class="w3-button w3-padding-small w3-green">
-                                                    <span class="material-icons">
-                                                        attach_file
-                                                    </span>
-                                                </button>
-                                                <button class="w3-button w3-green w3-right">
-                                                    Enviar
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="w3-margin w3-padding w3-panel w3-leftbar w3-border-blue w3-hover-shadow">
-                    <div class="w3-row">
-                        <img src="img/willie.jpg" class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin-right">
-                        <div class="w3-rest">
-                            <div class="w3-bar-block">
-                                <span><b>TANNER, Willie</b></span>
-                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
-                            </div>
-                            <div class="w3-bar-block w3-padding-16">
-                                Esto es un mensaje del foro para comprobar que sea correcto. Estoy probando si la
-                                disposición del sitio es apropiada para mostrar al foro.
-                            </div>
-                            <div class="w3-row w3-margin-bottom w3-right">
-                                <button
-                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
-                                <button class="w3-button w3-red w3-padding-small">
-                                    Ya no me gusta
-                                    <span class="w3-badge w3-white w3-text-red">2</span>
-                                </button>
-                            </div>
-                            <div class="w3-button w3-block w3-padding-small w3-green w3-center verRespuestas">
-                                Ver respuestas
-                                <span class="w3-badge w3-margin-left w3-white w3-text-green">2</span>
-                            </div>
-                            <div class="w3-hide">
-                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top">
-                                    <div class="w3-row">
-                                        <img src="img/profilepic.jpg"
-                                            class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
-                                        <div class="w3-rest w3-margin-top">
-                                            <div class="w3-bar-block">
-                                                <span><b>PEREZ, Juan</b></span>
-                                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
-                                            </div>
-                                            <div class="w3-bar-block w3-padding-16">
-                                                Esta es una respuesta para ver si queda bien la disposición. Escucho
-                                                quejas, reclamos, lo que sea con tal de ver si hice macana.
-                                            </div>
-                                            <div class="w3-row w3-margin-bottom w3-right">
-                                                <button
-                                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
-                                                <button class="w3-button w3-green w3-padding-small">
-                                                    Me gusta
-                                                    <span class="w3-badge w3-white w3-text-green">2</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top">
-                                    <div class="w3-row">
-                                        <img src="img/alf.jpg"
-                                            class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
-                                        <div class="w3-rest w3-margin-top">
-                                            <div class="w3-bar-block">
-                                                <span><b>SHUMWAY, Gordon</b></span>
-                                                <span class="w3-padding w3-opacity">31/12/20 13:00</span>
+                                                <span><b>Anónimo</b></span>
+                                                <span class="w3-padding-small w3-round w3-pale-green cod">1234</span>
+                                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
                                                 <div class="w3-right">
                                                     <span class="material-icons opciones">create</span>
                                                     <span class="material-icons opciones">delete_outline</span>
                                                 </div>
                                             </div>
                                             <div class="w3-bar-block w3-padding-16">
-                                                No hay problema, Willie.
+                                                ¡No hay problema!
                                             </div>
                                             <div class="w3-row w3-margin-bottom w3-right">
                                                 <button
                                                     class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
                                                 <button class="w3-button w3-green w3-padding-small">
                                                     Me gusta
-                                                    <span class="w3-badge w3-white w3-text-green">2</span>
+                                                    <span class="w3-badge w3-white w3-text-green">1</span>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-sand">
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-sand respuesta">
                                     <div class="w3-row w3-section">
                                         <img src="img/alf.jpg"
                                             class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin-right">
@@ -439,7 +353,117 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                </li>
+                <li class="w3-margin w3-padding w3-panel w3-leftbar w3-border-blue w3-hover-shadow">
+                    <div class="w3-row">
+                        <img src="img/willie.jpg" class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin-right">
+                        <div class="w3-rest">
+                            <div class="w3-bar-block">
+                                <span><b>TANNER, William</b></span>
+                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
+                            </div>
+                            <div class="w3-bar-block w3-padding-16">Tengo información acerca del auto: mañana vuelve a casa. Me dijeron que está como nuevo, solo espero que ALGUIEN no lo vuelva a chocar.
+                            </div>
+                            <div class="w3-row w3-margin-bottom w3-right">
+                                <button
+                                    class="w3-button w3-margin-right w3-green w3-padding-small">Responder</button>
+                                    <button class="w3-button w3-red w3-padding-small">
+                                        Ya no me gusta
+                                        <span class="w3-badge w3-white w3-text-red">10</span>
+                                    </button>
+                            </div>
+                            <div class="w3-button w3-block w3-padding-small w3-green w3-center verRespuestas">
+                                Ver respuestas
+                                <span class="w3-badge w3-margin-left w3-white w3-text-green">2</span>
+                            </div>
+
+                            <div class="w3-hide respuestas">
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top">
+                                    <div class="w3-row">
+                                        <img src="img/brian.jpg"
+                                            class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
+                                        <div class="w3-rest w3-margin-top user">
+                                            <div class="w3-bar-block">
+                                                <span><b>TANNER, Brian</b></span>
+                                                <span class="w3-padding-small w3-round w3-pale-green cod">1234</span>
+                                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
+                                            </div>
+                                            <div class="w3-bar-block w3-padding-16">
+                                                ¡Perfecto! ¡Me alegro!
+                                            </div>
+                                            <div class="w3-row w3-margin-bottom w3-right">
+                                                <button
+                                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
+                                                <button class="w3-button w3-green w3-padding-small">
+                                                    Me gusta
+                                                    <span class="w3-badge w3-white w3-text-green">2</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top">
+                                    <div class="w3-row">
+                                        <img src="img/alf.jpg"
+                                            class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin">
+                                        <div class="w3-rest w3-margin-top user">
+                                            <div class="w3-bar-block">
+                                                <span><b>SHUMWAY, Gordon</b></span>
+                                                <span class="w3-padding-small w3-round w3-pale-green cod">1234</span>
+                                                <span class="w3-padding-small w3-opacity">31/12/20 13:00</span>
+                                                <div class="w3-right">
+                                                    <span class="material-icons opciones">create</span>
+                                                    <span class="material-icons opciones">delete_outline</span>
+                                                </div>
+                                            </div>
+                                            <div class="w3-bar-block w3-padding-16">
+                                                Claro, culpen al extraterrestre.
+                                            </div>
+                                            <div class="w3-row w3-margin-bottom w3-right">
+                                                <button
+                                                    class="w3-button w3-margin-right w3-green w3-padding-small responder">Responder</button>
+                                                <button class="w3-button w3-green w3-padding-small">
+                                                    Me gusta
+                                                    <span class="w3-badge w3-white w3-text-green">2</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-container w3-leftbar w3-border-green w3-margin-top w3-sand respuesta">
+                                    <div class="w3-row w3-section">
+                                        <img src="img/alf.jpg"
+                                            class="w3-col w3-hide-small w3-circle fotoPerfil w3-margin-right">
+                                        <div class="w3-rest">
+                                            <div class="w3-bar-block">
+                                                <textarea class="w3-input w3-border-0 w3-white" rows="3"></textarea>
+                                            </div>
+                                            <div class="w3-padding-4">
+                                                <label>
+                                                    <input type="checkbox" class="w3-check w3-small" name="anonimo">
+                                                    Publicar como anónimo
+                                                </label>
+                                            </div>
+                                            <div class="w3-section">
+                                                <button class="w3-button w3-padding-small w3-green">
+                                                    <span class="material-icons">
+                                                        insert_photo
+                                                    </span>
+                                                </button>
+                                                <button class="w3-button w3-padding-small w3-green">
+                                                    <span class="material-icons">
+                                                        attach_file
+                                                    </span>
+                                                </button>
+                                                <button class="w3-button w3-green w3-right">
+                                                    Enviar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </li>
             </div>
         </div>

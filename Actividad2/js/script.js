@@ -14,6 +14,12 @@ $(document).ready(function () {
   $("#nuevoMensaje").click(function (e) {
     abrirOpciones("mensaje")
   });
+  $(".responder").click(function (e) {
+    var container = $(this).closest(".respuestas");
+    var input = container.find(".respuesta").find("textarea");
+    var user = $(this).closest(".user").find(".cod").html();
+    input.val(input.val()+'>'+user+' ');
+  });
 });
 
 function abrirOpciones(id) {
